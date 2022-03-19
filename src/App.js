@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
+import CounterIncrease from "./components/CounterIncrease";
+import CounterDecrease from './components/CounterDecrease';
+import CounterReset from "./components/CounterReset";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter/>
+      <CounterIncrease/>
+      <CounterDecrease/>
+      <br></br>
+      <hr style={{width:"120px", backgroundColor:"red", height:"3px", border:"1px solid red"}}></hr>
+      <CounterReset/>
     </div>
   );
 }
